@@ -46,7 +46,7 @@ Screenshots:
 
 * Add New Special
 
-![alt text](/screenshots/add_new_special_New+Test+Special.PNG)
+![alt text](/screenshots/add_new_special_New%20Test%20Special.PNG)
 
 ![alt text](/screenshots/view_new_special.PNG)
 
@@ -56,7 +56,7 @@ Screenshots:
 
 * Edit Special
 
-![alt text](/screenshots/edit_special_Axil+Coffee+Roasters.PNG)
+![alt text](/screenshots/edit_special_Axil%20Coffee%20Roasters.PNG)
 
 ![alt text](/screenshots/view_edited_special.PNG)
 
