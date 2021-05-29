@@ -1,0 +1,60 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+
+    <main>
+        <% if (ads.length > 0) { %>
+            <h1 class="centered">Ads</h1>
+            <div class="grid">
+                <% for (let ad of ads) { %>
+                    <article class="card product-item">
+                        <header class="card__header">
+                            <h1 class="product__title"><%= ad.title %></h1>
+                        </header>
+                        <div class="card__content">
+                            <h2 class="product__price">$<%= ad.price %></h2>
+                            <p class="product__description"><%= ad.description %></p>
+                        </div>
+                        <div class="card__actions">
+                            <%- include('../includes/add-to-cart.ejs', {ad: ad}) %>
+                        </div>
+                    </article>
+                <% } %>
+            </div>
+        <% } if (specials.length > 0) { %>
+            <h1 class="centered">Specials</h1>
+            <div class="grid">
+                <% for (let special of specials) { %>
+                    <article class="card product-item">
+                        <header class="card__header">
+                            <h1 class="product__title"><%= special.title %></h1>
+                        </header>
+                        <div class="card__content">
+                            <ul>
+                                <% for (let pricingRule of special.pricingRules) { %>
+                                    <% if (pricingRule.type == 'getExtra') { %>
+                                        <li>Get a <%= pricingRule.minBuy + pricingRule.extra %> for <%= pricingRule.minBuy %> deal on <strong><%= pricingRule.adData.title %></strong></li>
+                                    <% } %>
+                                    <% if (pricingRule.type == 'discountedPrice') { %>
+                                        <li>Get a discount on <strong><%= pricingRule.adData.title %></strong> where the price drops to $<%= pricingRule.discountedPrice %> per ad</li>
+                                    <% } %>
+                                <% } %>
+                            </ul>
+                        </div>
+                        <div class="card__actions">
+                            <form action="/cart/apply-special" method="POST">
+                                <button class="btn" type="submit">Apply</button>
+                                <input type="hidden" name="specialId" id="specialId" value="<%= special['_id'].toString() %>">
+                            </form>
+                        </div>
+                    </article>
+                <% } %>
+            </div>
+        <% } if(ads.length == 0 && specials.length == 0) { %>
+            <h1>No Products Found!</h1>
+        <% } %>
+    </main>
+<%- include('../includes/end.ejs') %>

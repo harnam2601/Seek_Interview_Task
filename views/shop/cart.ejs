@@ -1,0 +1,55 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/cart.css">
+    </head>
+
+    <body>
+        <%- include('../includes/navigation.ejs') %>
+        <main>
+            <% if (items.length > 0) { %>
+                <ul class="cart__item-list">
+                    <% items.forEach(item => { %>
+                        <li class="cart__item">
+                            <div>
+                                <h1><%= item.title %></h1>
+                                <% if(item.extraQty || item.discountedPrice) { %>
+                                    <div>(Special Applied)</div>
+                                <% } %>
+                            </div>
+                            
+                            <div>
+                                <h2>Quantity: <%= item.qty %></h2>
+                                    <% if(item.extraQty) { %>
+                                        <div class="centered">
+                                            (+<%= item.extraQty %> extra)
+                                        </div>
+                                    <% } %>
+                            </div>
+                            <div>
+                                <h2>
+                                    Price: $
+                                    <% if(!item.discountedPrice) { %>
+                                        <%= item.qty * item.price %>
+                                    <% } else { %>
+                                        <%= item.qty * item.discountedPrice %>
+                                    <% } %>
+                                </h2>
+                                <% if(item.discountedPrice) { %>
+                                    <div>(Discounted Price)</div>
+                                <% } %>
+
+                            </div>
+                        </li>
+                    <% }) %>
+                </ul>
+                <hr>
+                <div class="centered">
+                    <form action="/create-order" method="POST">
+                        <button type="submit" class="btn">Order Now!</button>
+                    </form>
+                </div>
+                
+            <% } else { %>
+                <h1>No Items in Cart!</h1>
+            <% } %>
+        </main>
+        <%- include('../includes/end.ejs') %>

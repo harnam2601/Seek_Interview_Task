@@ -1,0 +1,19 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/accordion.css">
+    </head>
+
+    <body>
+        <%- include('../includes/navigation.ejs') %>
+
+            <main>
+                <h2>Settings</h2>
+                <%- include('add-special.ejs') %>
+                <%- include('edit-special.ejs') %>
+            </main>
+        <script src="/js/accordion.js"></script>
+        <script src="/js/adminPageHelper.js" defer></script>
+        <%- include('../includes/end.ejs') %>
+        <input type="hidden" id="ad-list" value="<%= JSON.stringify(adList) %>">
+        <input type="hidden" id="special-list" value="<%= JSON.stringify(specialList) %>">

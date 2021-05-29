@@ -1,0 +1,16 @@
+<button class="accordion">Edit Special</button>
+<div class="panel" id="edit-special-panel">
+  <form class="product-form" action="/admin/edit-special" method="POST">
+    <div class="form-control">
+      <label for="special">Select Special</label>
+      <select name="special" id="special" onchange="specialSelected(this.id, this.value); adjustPanelHeight('edit-special-panel')">
+        <% specialList.forEach(special => { %>
+          <option value="<%= special['_id'].toString() %>"><%= special.title %></option>
+        <% }) %>
+      </select>
+      <div id="special-container"></div>
+    </div>
+    <button class="btn" type="submit">Edit</button>
+    <input type="hidden" name="editedSpecialData" id="edited-special-data">
+</form>
+</div>

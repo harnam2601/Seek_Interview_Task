@@ -1,0 +1,16 @@
+<button class="accordion">Add New Special</button>
+<div class="panel" id="add-special-panel">
+  <form class="product-form" action="/admin/add-special" method="POST">
+    <div class="form-control">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title">
+    </div>
+    <div class="form-control">
+      <label for="pricing-rules-count">Number of Pricing Rules</label>
+      <input type="number" id="pricing-rules-count" name="pricingRulesCount" oninput="renderPricingRuleSettings(this.id, this.value)">
+    </div>
+    <div id="pricing-rules-container"></div>
+    <button class="btn" type="submit">Create</button>
+    <input type="hidden" name="pricingRulesData" id="pricing-rules-data">
+</form>
+</div>
