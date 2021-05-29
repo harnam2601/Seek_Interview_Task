@@ -10,7 +10,7 @@ This project is a part of an interview process where Seek provided a technical a
 - Frontend: HTML5, CSS3
 - Template Engine: EJS
 
-Functionality Completed:
+#### Functionality Completed:
 * Shop View to display available Ads and Special Pricings
 * Cart functionality to display items in the cart and prices updated accordingly if any special pricing applied
 * Admin functionality to add new custom special pricing or edit the existing special pricings
