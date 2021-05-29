@@ -8,8 +8,7 @@ Functionality Completed:
 * Cart functionality to display items in the cart and prices updated accordingly if any special pricing applied
 * Admin functionality to add new custom special pricing or edit the existing special pricings
 
-Watch this short video
-
+##Click the image below to view short explaination video
 [![IMAGE ALT TEXT HERE](/screenshots/shop_view.PNG)](https://youtu.be/JJSqoKfskFg)
 
 Screenshots:
