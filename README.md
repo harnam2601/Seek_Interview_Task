@@ -4,7 +4,11 @@ This project is a part of an interview process where Seek provided a technical a
 ### Important Note: 
 #### This repository doesn't include .env( Database Credentials ), request these credential from Harnam Singh at harnam.singh2601@gmail.com
 
-Technology Stack Used: MERN stack
+####Technology Stack Used:
+Backend: NodeJS
+Backend Framework: ExpressJS
+Frontend: HTML5, CSS3
+Template Engine: EJS
 
 Functionality Completed:
 * Shop View to display available Ads and Special Pricings
