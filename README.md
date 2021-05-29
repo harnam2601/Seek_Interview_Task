@@ -10,4 +10,12 @@ Functionality Completed:
 
 Screenshots:
 
-![alt text](/screenshots/mobile_view_1.PNG)
+* Shop View, display Ads and Special Pricings
+![alt text](/screenshots/shop_view.PNG)
+
+* Add ads to your cart
+![alt text](/screenshots/add_5_classic_ad.PNG)
+![alt text](/screenshots/add_10_standout_ad_and_3_premiun_ad.PNG)
+
+* View Cart after adding ads and no special pricing applied
+![alt text](/screenshots/view_cart.PNG)
