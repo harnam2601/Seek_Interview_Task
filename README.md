@@ -7,3 +7,7 @@ Functionality Completed:
 * Shop View to display available Ads and Special Pricings
 * Cart functionality to display items in the cart and prices updated accordingly if any special pricing applied
 * Admin functionality to add new custom special pricing or edit the existing special pricings
+
+Screenshots:
+
+![alt text](/screenshots/mobile_view_1.PNG)
