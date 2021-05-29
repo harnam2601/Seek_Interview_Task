@@ -10,7 +10,7 @@ Functionality Completed:
 
 Watch this short video
 
-[![IMAGE ALT TEXT HERE]()](https://youtu.be/JJSqoKfskFg)
+[![IMAGE ALT TEXT HERE](/screenshots/shop_view.PNG)](https://youtu.be/JJSqoKfskFg)
 
 Screenshots:
 
