@@ -18,7 +18,7 @@ This project is a part of an interview process where Seek provided a technical a
 ## Click this image to view short explaination video
 [![IMAGE ALT TEXT HERE](/screenshots/shop_view.PNG)](https://youtu.be/JJSqoKfskFg)
 
-Screenshots:
+### Screenshots:
 
 * Shop View, display Ads and Special Pricings
                                                                        
