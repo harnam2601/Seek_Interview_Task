@@ -1,7 +1,9 @@
 # Seek_Interview_Task
 This project is a part of an interview process where Seek provided a technical assessment. Here is the description of the task provided by Seek: https://drive.google.com/file/d/1AybDbSK8oe5pSx9vbQw_Gb0eCnGZlEcx/view?usp=sharing
 
-Technology Stack Used: MERN
+### Important Note: This repository doesn't include .env( Database Credentials ), request these credential from Harnam Singh at harnam.singh2601@gmail.com
+
+Technology Stack Used: MERN stack
 
 Functionality Completed:
 * Shop View to display available Ads and Special Pricings
