@@ -16,7 +16,7 @@ This project is a part of an interview process where Seek provided a technical a
 * Admin functionality to add new custom special pricing or edit the existing special pricings
 
 ## Click this image to view short explaination video
-[![IMAGE ALT TEXT HERE](/screenshots/shop_view.PNG)](https://youtu.be/JJSqoKfskFg)
+[![IMAGE ALT TEXT HERE](/screenshots/shop_view.PNG)](https://drive.google.com/file/d/14vZ15W4t15iSqyBCfeleaxGFecR0NUSH/view?usp=sharing)
 
 ### Screenshots:
 
